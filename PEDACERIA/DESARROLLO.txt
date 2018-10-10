@@ -1,0 +1,35 @@
+Envio datos de acceso al server de pruebas LAMP
+Aqui redacto los accesos y las direcciones para administrar los recursos
+*******FTP:
+LOCAL                                            REMOTA
+ 192.168.0.56                           187.188.203.80      PUERTO: 21
+user: soporte
+pass: Privado1
+
+*******WEB
+LOCAL                                                            REMOTA
+http://192.168.0.56:8077/                 http://187.188.203.80:8077/
+
+************MYSQL
+LOCAL                                                                                        REMOTA
+http://192.168.0.56:8077/phpmyadmin/         http://187.188.203.80:8077/phpmyadmin/
+user: root
+pass: Privado1
+
+Tambien tengo el SHELL por PUTTY y el WEBMIN si es necesario
+
+Por ultimo para entrar al folder por medio de carpetas compartidas windows 
+ aqui la ruta, ponla en ejecutar:
+\\jordis
+el usuario es: soportemys
+pass: Privado1
+
+
+
+##### ##### ##### #####
+INVENT
+url local: http://192.168.0.41:8021/
+url REMOTA: http://187.188.203.80:8021/
+user: soporte
+pass: Privado1
+

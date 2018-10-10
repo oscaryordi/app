@@ -1,0 +1,111 @@
+﻿<html>
+<head>
+<meta name="sitelock-site-verification" content="1768" />
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="https://www.jetvan.mx/favicon.ico" />
+<meta name='viewport' content="width=device-width, initial-scale=1">
+<title>Jet Van Car Rental, S.A. de C.V.</title>
+<style>
+body {
+	margin: 0;
+	background-image: url(app.jpg);
+	background-repeat: repeat;
+	background-size: cover;
+	font-family: arial;
+	font-size: 16px;
+	background-color: gray;
+	}
+table{
+	margin:auto;
+	opacity: 0.8;
+	background-color:white;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+td{
+	text-align:center;
+	valign:top ;
+	font-size: .8em; 
+	color: black; 
+	}
+#fecha{
+	text-align:right;
+	color: white;
+	margin: 1em;
+}
+#razon{
+	font-family: Fragmentcore;
+	font-weight:bold;
+}
+#link{
+	text-decoration:none;
+	color:black;
+}
+#footer1{
+	position: fixed;
+	bottom: 0px;
+	width:100%;
+	text-align:center;
+}
+@font-face { 
+	font-family: Fragmentcore; 
+	src: url('font/Fragmentcore.otf'); 
+	src: local("Fragmentcore"), url('font/Fragmentcore.otf'); 
+}
+</style>
+</head>
+<body >
+<p id="fecha">
+<script async>
+var mydate=new Date();
+var year=mydate.getYear();
+if (year < 1000)
+year+=1900;
+var day=mydate.getDay();
+var month=mydate.getMonth();
+var daym=mydate.getDate();
+if (daym<10)
+daym="0"+daym;
+var dayarray=new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+document.write(" "+ dayarray[day] + ", " + daym + " de " + montharray[month] + " de " + year + " ");
+</script> 
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<table>
+				<td>
+				  <h1 id="razon">Jet Van Car Rental, S.A. de C.V. </h1>
+				  <p>Pensilvania 131 local 1, Col.N&aacute;poles, Del. Benito Ju&aacute;rez, M&eacute;xico, D.F. </p>
+				  <p>Calzada M&eacute;xico-Tacuba No. 1073, Col. Huichapan, Del. Miguel Hidalgo, M&eacute;xico, D.F. </p>
+				  <p>Call Center 01 800 822 7737</p>
+				  <p><a href='https://jetvan.mx/jetvan/exp/ConsultaDocumentos.php' style="text-decoration: none;" > | Pólizas | </a></p>
+				  <p>&copy; 2010 - 
+				  
+				  <script async>
+					var actualYearFecha=new Date();
+					var actualYear=actualYearFecha.getYear();
+					
+					if (actualYear < 1000)
+					actualYear+=1900;
+					
+					document.write(" " + actualYear + " ");
+				  </script>
+				  
+				  </p>
+				  <p>All rights reserved</p>
+				  <p><a href="https://jetvan.mx/jetvan/app/login.php" id="link">&#9981;</a></p>
+				</td>
+</table>
+<p id="footer1"><a href="https://jetvan.mx/jetvan/app/login.php" id="link">&#9981;</a></p>
+</body>
+</html>
+<script async type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script async src="js/jquery.form.js" type="text/javascript" language="javascript"></script>
+<script async src="js/jquery.MultiFile.pack.js" type="text/javascript" language="javascript"></script>
