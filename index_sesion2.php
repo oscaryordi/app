@@ -16,6 +16,7 @@
 	$query 	= "SELECT * FROM `usuarios` WHERE usuario='$login'";
 	$result	=@mysqli_query($dbd,$query);
 	$row_cnt=mysqli_num_rows($result);
+
 	if($row_cnt==0)
 	{
 		/*echo "No existe el login introducido";*/
@@ -25,7 +26,7 @@
 	{
 		$array=mysqli_fetch_array($result);
 		if($array["clave"]==$pass && $array["suspendido"]==0)
-			{
+		{
 				$_SESSION['autentificado']="1";
 				$_SESSION['usuario'] 	=$_POST['usuario'];
 
@@ -97,19 +98,22 @@
 
 				$_SESSION["movForaneo"]	=$array["movForaneo"];
 				$_SESSION["superLog"]	=$array["superLog"];
-				$_SESSION["proveedores"]	=$array["proveedores"];
+				$_SESSION["proveedores"]=$array["proveedores"];
 
-				$_SESSION["siniestro"]		=$array["siniestro"];
-				$_SESSION["siniestroSup"]	=$array["siniestroSup"];
+				$_SESSION["siniestro"]	=$array["siniestro"];
+				$_SESSION["siniestroSup"]=$array["siniestroSup"];
 
-				$_SESSION["almacen"]	=$array["almacen"];
+				$_SESSION["almacen"]	=$array["almacen"]; // para personal de claudia
+
+				$_SESSION["callcenterH"]=$array["callcenterH"];
+				$_SESSION["callcenterV"]=$array["callcenterV"];
 
 				header("Location: index.php");
-			}
+		}
 		else
-			{
-				/*echo "Password incorrecto!";*/
-				header("Location: ../login.php?errorusuario=si");
-			}
+		{
+			/*echo "Password incorrecto!";*/
+			header("Location: ../login.php?errorusuario=si");
+		}
 	}
 ?>

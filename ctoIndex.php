@@ -27,7 +27,6 @@ if( $_SESSION["clientes"] > 0 OR $tieneEsteContrato == 1 )
 	//$id_contrato = $_GET['id_contrato'];
 	contratoxid($id_contrato);
 
-
 	if($borrado == 0) // SI ESTA BORRADO NO SE PUEDE VISUALIZAR
 	{
 		clientexid($id_cliente);

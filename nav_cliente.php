@@ -1,6 +1,12 @@
 <?php
-echo "<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>"; // LINK PARA USAR LOS ICONOS FONTAWESOME
-$borrarTxtIcon = "<i class='fa fa-trash-o'  style='font-size:16px; color:gray;font-weight: ;'   alt='ELIMINAR' ></i>"; // ICONO PARA BORRAR
+?>
+<style>
+     .fa-trash-alt{color:gray;font-size:16px;}
+     .fa-trash-alt:hover{ color:green;}
+ </style>   
+<?php
+$borrarTxtIcon = "<i class='fas fa-trash-alt' alt='ELIMINAR' ></i>";
+// ICONO PARA BORRAR
 
 if($_SESSION["clientes"] > 0){ // RESUMEN CONTRATOS ?>
 <form action="clientesresumencto.php" class="navegacion">

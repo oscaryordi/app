@@ -22,6 +22,13 @@ if($_SESSION["asigna"] > 1 OR $_SESSION["asigcto"]){ // UNIDAD SE HABILITA VISTA
 	<input id="gobutton2" type="submit" name="asigna" value="Asignación"></form>
 <?php }
 
+
+if($_SESSION["callcenterH"] > 0 or  $_SESSION["callcenterS"] > 1){ // CLIENTES SE HABILITA VISTA A Gerencia Ventas Gobierno ?>
+<form action="callcenterindex.php" class="navegacion">
+	<input id="gobutton2" type="submit" name="callcenter" value="Call Center"></form>
+<?php }
+
+
 if($_SESSION["clientes"] > 0){ // CLIENTES SE HABILITA VISTA A Gerencia Ventas Gobierno ?>
 <form action="clienteindex.php" class="navegacion">
 	<input id="gobutton2" type="submit" name="clientes" value="Clientes"></form>

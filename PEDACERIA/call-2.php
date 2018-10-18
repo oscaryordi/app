@@ -1,5 +1,6 @@
-<?php
+<?PHP
 include("1header.php");
+
 echo "<meta charset='utf-8'>";
 
 if($_SESSION["callcenterH"] > 1){  // APERTURA PRIVILEGIOS // cerar privilegio call center
@@ -29,8 +30,7 @@ include'u11asignacion.php';
 <head>
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <?php
 //echo "</div>";
@@ -140,7 +140,7 @@ if(isset($_POST['Enviar']))
 				
 			echo $sql_alta;
 
-			$alta_ejecutada = mysqli_query($dbd2, $sql_alta);
+			//$alta_ejecutada = mysqli_query($dbd2, $sql_alta);
 			$id_callcenter 	= mysqli_insert_id($dbd2);
 			//echo "<br>$sql_alta<br>";
 

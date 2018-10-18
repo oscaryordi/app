@@ -99,13 +99,23 @@ $TransmisionTxt = ($Transmision == 1)?'AUTOMATICO':(($Transmision == 2)?'ESTANDA
 ###### TERMINA SOLICITUD ATENCION
 
 
-###### INICIO SOLICITUD ATENCION
+###### INICIO ALERTA GPS
 		if($_SESSION["gps"] > 0){ // AUTORIZACION PARA ACTUALIZAR KILOMETRAJE
 			echo "<a href='gpsAlerta.php?id_unidad=".$id_unidad."' > 
 			<button type='button' title='GenerarAlertaGps'>
 			Generar Alerta GPS</button></a>\n";
 		}
-###### TERMINA SOLICITUD ATENCION
+###### TERMINA ALERTA GPS
+
+
+###### INICIO ALERTA GPS
+		if($_SESSION["callcenterH"] > 1){ // AUTORIZACION PARA ACTUALIZAR KILOMETRAJE
+			echo "<a href='callcenterAlta.php?id_unidad=".$id_unidad."' > 
+			<button type='button' title='RegistroLlamadaCC'>
+			Call Center</button></a>\n";
+		}
+###### TERMINA ALERTA GPS
+
 
 ?>
 <fieldset><legend>Datos de la Unidad</legend>
